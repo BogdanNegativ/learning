@@ -1,9 +1,9 @@
 package com.courses;
 
-import com.courses.java_oop.Animal;
-import com.courses.java_oop.BankAccount;
-import com.courses.java_oop.Cat;
-import com.courses.java_oop.Dog;
+import com.courses.java_oop.*;
+
+import java.util.ArrayList;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -84,5 +84,14 @@ public class Main {
         dog.makeSound();
         Cat cat = new Cat();
         cat.makeSound();
+
+        //3.Polymorphism
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(new Circle(5));
+        shapes.add(new Rectangle(4, 6));
+        for (Shape shape : shapes) {
+            System.out.println("Area: " + shape.getArea());
+        }
+
     }
 }
