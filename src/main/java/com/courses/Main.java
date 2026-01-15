@@ -1,20 +1,8 @@
 package com.courses;
 
-import com.courses.java_oop.Abstraction.CardPayment;
-import com.courses.java_oop.Abstraction.CashPayment;
-import com.courses.java_oop.Abstraction.Payment;
-import com.courses.java_oop.Composition.Car;
-import com.courses.java_oop.Composition.Engine;
-import com.courses.java_oop.Encapsulation.BankAccount;
-import com.courses.java_oop.Inheritance.Animal;
-import com.courses.java_oop.Inheritance.Cat;
-import com.courses.java_oop.Inheritance.Dog;
-import com.courses.java_oop.Interfaces_Polymorphism.EmailNotification;
-import com.courses.java_oop.Interfaces_Polymorphism.NotificationService;
-import com.courses.java_oop.Interfaces_Polymorphism.SmsNotification;
-import com.courses.java_oop.Polymorphism.Circle;
-import com.courses.java_oop.Polymorphism.Rectangle;
-import com.courses.java_oop.Polymorphism.Shape;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.Contractor;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.Employee;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.FullTimeEmployee;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -78,6 +66,7 @@ public class Main {
         scanner.close();
          */
 
+        /* ---Java OOP---
         //1.Encapsulation
         BankAccount account = new BankAccount("Bohdan", 0);
         System.out.println(account.getAccountNumber());
@@ -124,5 +113,14 @@ public class Main {
         Engine engine = new Engine();
         Car car = new Car(engine);
         car.startCar();
+         */
+
+        //Abstract Classes Task1
+        List<Employee> employees = new ArrayList<>();
+        employees.add(new FullTimeEmployee("Bob", 15, 887654));
+        employees.add(new Contractor("Lob", 55, 488, 48));
+        for (Employee employee : employees) {
+            employee.displayInfo();
+        }
     }
 }
