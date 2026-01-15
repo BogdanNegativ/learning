@@ -98,5 +98,12 @@ public class Main {
         Payment payment2 = new CashPayment();
         payment1.pay(125.2);
         payment2.pay(21);
+
+        //5.Interfaces & Polymorphism
+        NotificationService notification;
+        notification = new EmailNotification();
+        notification.send("Your had new message");
+        notification = new SmsNotification();
+        notification.send("Your key is 22468");
     }
 }
