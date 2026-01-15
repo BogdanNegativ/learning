@@ -6,6 +6,9 @@ import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.Full
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Car;
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Truck;
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Vehicle;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.AudioSystem;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.RemoteControllable;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.SmartTV;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -133,5 +136,17 @@ public class Main {
         truck.drive(100);
         System.out.println("Remaining fuel for " + car.getModel() + ": " + car.getFuelLevel() + " liters.");
         System.out.println("Remaining fuel for " + truck.getModel() + ": " + truck.getFuelLevel() + " liters.");
+
+        //Interfaces Task1
+        RemoteControllable tv = new SmartTV();
+        RemoteControllable audio = new AudioSystem();
+        operateDevice(tv);
+        operateDevice(audio);
+    }
+
+    public static void operateDevice(RemoteControllable device) {
+        device.powerOn();
+        device.setVolume(60);
+        device.powerOff();
     }
 }
