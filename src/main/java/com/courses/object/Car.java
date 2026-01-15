@@ -1,4 +1,4 @@
-package com.courses;
+package com.courses.object;
 
 public class Car {
     String brand;

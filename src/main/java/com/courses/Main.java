@@ -1,23 +1,24 @@
 package com.courses;
 
-import java.io.IOException;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+import com.courses.java_oop.BankAccount;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-//        Person person = new Person("Bohdan",23);
-//        person.printInfo();
-//
-//        Car car = new Car("Mercedes");
-//        car.printSpeed();
-//        car.accelerate(120);
-//        car.printSpeed();
-//        car.accelerate(-150);
-//        car.printSpeed();
+        /*  ---Object---
+        Person person = new Person("Bohdan",23);
+        person.printInfo();
 
+        Car car = new Car("Mercedes");
+        car.printSpeed();
+        car.accelerate(120);
+        car.printSpeed();
+        car.accelerate(-150);
+        car.printSpeed();
+         */
+
+        /* ---handling exceptions---
         Scanner scanner = new Scanner(System.in);
         Divider divider = new Divider();
         boolean running = true;
@@ -58,5 +59,19 @@ public class Main {
             }
         }
         scanner.close();
+         */
+
+        //1.Encapsulation
+        BankAccount account = new BankAccount("Bohdan", 0);
+        System.out.println(account.getAccountNumber());
+        System.out.println(account.getBalance());
+        account.deposit(155.35);
+        System.out.println(account.getBalance());
+        account.withdraw(45.75);
+        System.out.println(account.getBalance());
+        account.deposit(-48.78);
+        System.out.println(account.getBalance());
+        account.withdraw(-500);
+        System.out.println(account.getBalance());
     }
 }

@@ -1,4 +1,4 @@
-package com.courses;
+package com.courses.handling_exceptions;
 
 import java.io.IOException;
 
