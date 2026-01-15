@@ -3,6 +3,9 @@ package com.courses;
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.Contractor;
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.Employee;
 import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task1.FullTimeEmployee;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Car;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Truck;
+import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Vehicle;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -122,5 +125,13 @@ public class Main {
         for (Employee employee : employees) {
             employee.displayInfo();
         }
+
+        //Abstract Classes Task2
+        Vehicle car = new Car("Sedan", 50);
+        Vehicle truck = new Truck("Freightliner", 50);
+        car.drive(100);
+        truck.drive(100);
+        System.out.println("Remaining fuel for " + car.getModel() + ": " + car.getFuelLevel() + " liters.");
+        System.out.println("Remaining fuel for " + truck.getModel() + ": " + truck.getFuelLevel() + " liters.");
     }
 }
