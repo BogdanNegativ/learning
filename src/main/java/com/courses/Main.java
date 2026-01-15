@@ -9,6 +9,10 @@ import com.courses.java_oop.Abstract_Class_Interface.Abstract_Classes.Task2.Vehi
 import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.AudioSystem;
 import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.RemoteControllable;
 import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task1.SmartTV;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task2.Encryptable;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task2.Messenger;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task2.ReverseEncryptor;
+import com.courses.java_oop.Abstract_Class_Interface.Interfaces.Task2.ShiftEncryptor;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -142,6 +146,13 @@ public class Main {
         RemoteControllable audio = new AudioSystem();
         operateDevice(tv);
         operateDevice(audio);
+
+        //Interfaces Task2
+        Messenger messenger = new Messenger();
+        Encryptable reverse = new ReverseEncryptor();
+        Encryptable shift = new ShiftEncryptor();
+        messenger.processMessage("Java", reverse);
+        messenger.processMessage("abc", shift);
     }
 
     public static void operateDevice(RemoteControllable device) {
