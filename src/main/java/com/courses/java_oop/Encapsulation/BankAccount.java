@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Encapsulation;
 
 public class BankAccount {
     private final String accountNumber;

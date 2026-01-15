@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Abstraction;
 
 public class CashPayment implements Payment{
     @Override

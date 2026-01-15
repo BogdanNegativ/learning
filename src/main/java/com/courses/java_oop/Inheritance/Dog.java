@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Inheritance;
 
 public class Dog extends Animal{
     @Override

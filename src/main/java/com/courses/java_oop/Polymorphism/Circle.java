@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Polymorphism;
 
 public class Circle extends Shape {
     private final double radius;

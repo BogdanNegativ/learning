@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Polymorphism;
 
 public class Rectangle extends Shape {
     private final double height;

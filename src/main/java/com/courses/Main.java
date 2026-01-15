@@ -1,6 +1,20 @@
 package com.courses;
 
-import com.courses.java_oop.*;
+import com.courses.java_oop.Abstraction.CardPayment;
+import com.courses.java_oop.Abstraction.CashPayment;
+import com.courses.java_oop.Abstraction.Payment;
+import com.courses.java_oop.Composition.Car;
+import com.courses.java_oop.Composition.Engine;
+import com.courses.java_oop.Encapsulation.BankAccount;
+import com.courses.java_oop.Inheritance.Animal;
+import com.courses.java_oop.Inheritance.Cat;
+import com.courses.java_oop.Inheritance.Dog;
+import com.courses.java_oop.Interfaces_Polymorphism.EmailNotification;
+import com.courses.java_oop.Interfaces_Polymorphism.NotificationService;
+import com.courses.java_oop.Interfaces_Polymorphism.SmsNotification;
+import com.courses.java_oop.Polymorphism.Circle;
+import com.courses.java_oop.Polymorphism.Rectangle;
+import com.courses.java_oop.Polymorphism.Shape;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -105,5 +119,10 @@ public class Main {
         notification.send("Your had new message");
         notification = new SmsNotification();
         notification.send("Your key is 22468");
+
+        //6.Composition
+        Engine engine = new Engine();
+        Car car = new Car(engine);
+        car.startCar();
     }
 }

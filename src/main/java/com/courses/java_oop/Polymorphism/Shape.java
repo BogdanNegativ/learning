@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Polymorphism;
 
 public abstract class Shape {
     public abstract double getArea();

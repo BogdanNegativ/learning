@@ -1,4 +1,4 @@
-package com.courses.java_oop;
+package com.courses.java_oop.Interfaces_Polymorphism;
 
 public class SmsNotification implements NotificationService {
     @Override
