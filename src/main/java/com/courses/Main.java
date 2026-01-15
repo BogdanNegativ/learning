@@ -1,6 +1,9 @@
 package com.courses;
 
+import com.courses.java_oop.Animal;
 import com.courses.java_oop.BankAccount;
+import com.courses.java_oop.Cat;
+import com.courses.java_oop.Dog;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -73,5 +76,13 @@ public class Main {
         System.out.println(account.getBalance());
         account.withdraw(-500);
         System.out.println(account.getBalance());
+
+        //2.Inheritance
+        Animal animal = new Animal();
+        animal.makeSound();
+        Dog dog = new Dog();
+        dog.makeSound();
+        Cat cat = new Cat();
+        cat.makeSound();
     }
 }
