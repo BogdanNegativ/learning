@@ -93,5 +93,10 @@ public class Main {
             System.out.println("Area: " + shape.getArea());
         }
 
+        //4.Abstraction
+        Payment payment1 = new CardPayment();
+        Payment payment2 = new CashPayment();
+        payment1.pay(125.2);
+        payment2.pay(21);
     }
 }
